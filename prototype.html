@@ -39,11 +39,18 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="pantalla1">
+          <poly-button text="Botón" icon="" raised="" link="" id="poly1"></poly-button>
+          <poly-card title="Título" image="http://placehold.it/350x150/eee/33000000" id="poly2"></poly-card>
+          <poly-checkbox text="Ítem" link="" id="poly4" checked=""></poly-checkbox>
+          <poly-checkbox text="Ítem" link="" id="poly3" checked=""></poly-checkbox>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
